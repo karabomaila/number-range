@@ -1,4 +1,4 @@
-package src.numberrangesummarizer;
+package src.main.numberrangesummarizer;
 import java.util.Collection;
 
 /**

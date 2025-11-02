@@ -1,8 +1,9 @@
 package src.test;
-import static org.junit.Assert.assertEquals;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import src.numberrangesummarizer.NumberRangeSummarizerImp;
+import src.main.numberrangesummarizer.NumberRangeSummarizerImp;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.Collection;
 import java.util.Arrays;
