@@ -1,7 +1,7 @@
-package src.test;
+package numberrangesummarizer;
 import org.junit.jupiter.api.Test;
 
-import src.main.numberrangesummarizer.NumberRangeSummarizerImp;
+import numberrangesummarizer.NumberRangeSummarizerImp;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -57,8 +57,8 @@ public class NumberRangeSummarizerImpTest{
 
     @Test
     public void testSummarizeCollectionWithNoSequentialNumbers() {
-        Collection<Integer> input = Arrays.asList(1, 2, 4);
-        String expected = "1, 2, 4";
+        Collection<Integer> input = Arrays.asList(1, 3, 6);
+        String expected = "1, 3, 6";
         assertEquals(expected, numberRangeSummarizerImp.summarizeCollection(input));
     }
 
