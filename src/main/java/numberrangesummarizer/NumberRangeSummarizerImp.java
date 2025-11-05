@@ -2,11 +2,15 @@ package numberrangesummarizer;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import numberrangesummarizer.NumberRangeSummarizer;
 
-public class NumberRangeSummarizerImp {
+public class NumberRangeSummarizerImp implements NumberRangeSummarizer {
     public Collection<Integer> collect(String input){
         ArrayList<Integer> nums = new ArrayList<Integer>();
-        for (String num: input.split(",")) nums.add(Integer.parseInt(num.trim()));
+
+        if (input.length() > 0){
+            for (String num: input.split(",")) nums.add(Integer.parseInt(num.trim()));
+        }
         return nums;
     }
 
@@ -40,8 +44,9 @@ public class NumberRangeSummarizerImp {
             prev_num = curr_num;
             i++;
         }
-        
-        return result.toString().substring(1, result.toString().length() - 1);
+        String output = result.toString();
+
+        return output.substring(1, output.length() - 1);
         
     }
 }
